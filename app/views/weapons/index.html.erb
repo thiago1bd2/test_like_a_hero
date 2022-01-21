@@ -1,0 +1,12 @@
+<h1>Weapons#index</h1>
+<p>Find me in app/views/weapons/index.html.erb</p>
+
+<h2>All Weanpos</h2>
+<ul>
+  <% @weapons.each do |weapon| %>
+    <li>
+      <%= link_to weapon.name, weapon%>      
+    </li>
+  <% end %>
+</ul>
+  

@@ -1,0 +1,14 @@
+<h1>Weapons#show</h1>
+<p>Find me in app/views/weapons/show.html.erb</p>
+
+<h1><%= @weapon.name %></h1>
+<p>Description:<%= @weapon.description %></p>
+<p>Power Base:<%= @weapon.power_base %></p>
+<p>Power Step:<%= @weapon.power_step %></p>
+<p>Current Power:<%= @weapon.current_power %></p>
+<p>Level:<%= @weapon.level %></p>
+<a href="/weapons">Voltar</a>
+<%= link_to "Delete", weapons_path(@weapon), data: {
+        turbo_method: :delete,
+        turbo_confirm: "Are you sure?"
+      }%>
