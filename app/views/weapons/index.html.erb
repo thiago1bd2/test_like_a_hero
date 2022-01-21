@@ -5,7 +5,12 @@
 <ul>
   <% @weapons.each do |weapon| %>
     <li>
-      <%= link_to weapon.name, weapon%>      
+      <p><%= weapon.name %><p>
+      <ul>
+        <li><%= weapon.current_power %></li>
+        <li><%= weapon.title %></li>
+        <li><%= link_to 'details', weapon %></li>
+      </ul>
     </li>
   <% end %>
 </ul>

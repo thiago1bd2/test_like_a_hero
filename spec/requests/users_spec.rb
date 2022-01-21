@@ -21,7 +21,7 @@ RSpec.describe 'Users', type: :request do
       expect(response).to have_http_status(:success)
     end
 
-    it 'the user\'s title is presente' do
+    it 'title is presente' do
       users = create_list(:user, 3)
       get users_path
       users.each do |user|
