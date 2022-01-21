@@ -12,7 +12,7 @@ class WeaponsController < ApplicationController
     @weapon = Weapon.find(params[:id])
     @weapon.destroy
 
-    redirect_to weapons_path
+    redirect_to root_path, status: :see_other
   end
 
   def show
