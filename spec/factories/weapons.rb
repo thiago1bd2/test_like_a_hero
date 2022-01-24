@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'ffaker'
+
 FactoryBot.define do
   factory :weapon do
     name { FFaker::Lorem.word }
