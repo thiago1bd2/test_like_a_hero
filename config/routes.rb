@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   root 'weapons#index'
 
   resources :users, only: %i[index create]
-  resources :weapons  
+  resources :weapons
+  resources :enemies, only: %i[update destroy]
 end
